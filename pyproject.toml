@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "EasyPycode"
+version = "0.1.0"
+description = "Utility functions for Windows Python scripting"
+readme = "ReadMe.md"
+license = { file = "LICENSE.md" }
+authors = [
+  { name = "tromoSM" }
+]
+requires-python = ">=3.8"
+
+[tool.setuptools]
+py-modules = ["EasyPycode"]
