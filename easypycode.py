@@ -7,6 +7,9 @@ from colorama import Fore,Style
 import os
 import threading
 import sys
+from windows_toasts import AudioSource, Toast, ToastAudio,WindowsToaster
+from urllib import request
+
 MainTitle='eazyPython'
 CautionIcon=0x30
 InfoIcon=0x40
@@ -149,6 +152,23 @@ def FlashWindow(duration):
      ctypes.windll.user32.FlashWindow(a,True)
      time.sleep(duration)
      ctypes.windll.user32.FlashWindow(a,False)
+def SendNotification(text,description):
+ """
+ SendNotification() will only work in windows 10 or later.
+ """
+ burnttoast = WindowsToaster(MainTitle)
+ TotЯ = Toast()
+ TotЯ.text_fields = [text,description]
+ TotЯ.audio=ToastAudio(AudioSource.Default, looping=False)
+ burnttoast.show_toast(TotЯ)
+
+def CheckNetwork():
+ try:
+    request.urlopen("http://www.msftconnecttest.com/connecttest.txt", timeout=2)
+    return True
+ except request.URLError as err: 
+    return False
+
 __all__=[
  "Error",
  "Info",
@@ -166,6 +186,8 @@ __all__=[
  "Alert",
  "ReopenAsAdmin",
  "FlashWindow",
+ "SendNotification",
+ 'CheckNetwork',
  
   "CautionIcon",
   "InfoIcon",
