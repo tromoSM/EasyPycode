@@ -3,7 +3,7 @@
 
 ## installation
 ```bash
-pip install git+https://github.com/tromoSM/easypycode.git
+pip install easypycode==0.1.0
 ```
 and import the module into your python script as
 ```python
