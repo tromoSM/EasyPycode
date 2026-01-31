@@ -3,7 +3,7 @@
 
 ## installation
 ```bash
-pip install easypycode==0.1.0
+pip install easypycode
 ```
 and import the module into your python script as
 ```python
