@@ -12,6 +12,18 @@ authors = [
   { name = "tromoSM" }
 ]
 requires-python = ">=3.8"
+
+dependencies = [
+  "colorama",
+  "pywin32",
+  "windows-toasts",
+  "pillow",
+  "qrcode",
+  "python-barcode[images]",
+  "pywebview",
+  "requests"
+]
+
 classifiers = [
   "Operating System :: Microsoft :: Windows",
   "Programming Language :: Python :: 3",
