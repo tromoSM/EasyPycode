@@ -12,3 +12,7 @@ import easypycode as ez
 ```
 ## Documentation
 read [easypycode documentation](https://tromoSM.github.io/tromoSM/Projects/EasyPycode/documentation/) before using.
+
+
+###### [send feedback or request features](https://tromosm.ct.ws/?feedback=true&utm_source=read_easypycode)
+###### © 2026 - tromoSM. Licensed under Apache 2.0.
