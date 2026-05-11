@@ -11,7 +11,7 @@ license = { file = "LICENSE" }
 authors = [
   { name = "tromoSM" }
 ]
-requires-python = ">=3.8"
+requires-python = ">=3.8,<3.14"
 
 dependencies = [
   "colorama",
